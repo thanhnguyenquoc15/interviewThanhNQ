@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [demoTestSuite]">
+  <test thread-count="5" name="Verify that the user can create an account successfully(failed)">
+    <parameter name="browser" value="chromeV98"/>
+    <parameter name="dataFile" value="dataDriven"/>
+    <classes>
+      <class name="interview.TestCases">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="TC_01_VerifyUserAtHomepage"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- interview.TestCases -->
+    </classes>
+  </test> <!-- Verify that the user can create an account successfully(failed) -->
+  <test thread-count="5" name="Verify that the user cannot log in when entering a wrong email address or password(failed)">
+    <parameter name="browser" value="chromeV98"/>
+    <parameter name="dataFile" value="dataDriven"/>
+    <classes>
+      <class name="interview.TestCases">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="TC_02_CantLoginWithWrongPass"/>
+        </methods>
+      </class> <!-- interview.TestCases -->
+    </classes>
+  </test> <!-- Verify that the user cannot log in when entering a wrong email address or password(failed) -->
+</suite> <!-- Failed suite [demoTestSuite] -->

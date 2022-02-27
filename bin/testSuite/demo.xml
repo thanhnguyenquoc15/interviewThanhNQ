@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="demoTestSuite">
+
+	<test name="Verify that the user can create an account successfully">
+		<parameter name="browser" value="chromeV98" />
+		<parameter name="dataFile" value="dataDriven.yaml" />
+		<classes>
+			<class name="interview.TestCases">
+				<methods>
+					<include name="TC_01_VerifyUserAtHomepage"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Verify that the user cannot log in when entering a wrong email address or password">
+		<parameter name="browser" value="chromeV98" />
+		<parameter name="dataFile" value="dataDriven.yaml" />
+		<classes>
+			<class name="interview.TestCases">
+				<methods>
+					<include name="TC_02_CantLoginWithWrongPass"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+</suite>

@@ -1,0 +1,7 @@
+Verify that the user can create an account successfully: 
+    Username: "username"
+    Email: "validemail@gmail.com"
+    Password: "validPassword1"
+Verify that the user cannot log in when entering a wrong email address or password:
+    Username: "invalidMail@gmail.com"
+    Password: "invalidPassword1"

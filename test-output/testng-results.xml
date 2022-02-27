@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-27T12:23:13Z" name="demoTestSuite" finished-at="2022-02-27T12:23:24Z" duration-ms="10844">
+    <groups>
+    </groups>
+    <test started-at="2022-02-27T12:23:13Z" name="Verify that the user can create an account successfully" finished-at="2022-02-27T12:23:19Z" duration-ms="6085">
+      <class name="interview.TestCases">
+        <test-method is-config="true" signature="beforeClass(org.testng.ITestContext)[pri:0, instance:interview.TestCases@5dda768f]" started-at="2022-02-27T12:23:13Z" name="beforeClass" finished-at="2022-02-27T12:23:17Z" duration-ms="3533" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@15515c51]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="TC_01_VerifyUserAtHomepage(java.util.Hashtable)[pri:0, instance:interview.TestCases@5dda768f]" started-at="2022-02-27T12:23:17Z" name="TC_01_VerifyUserAtHomepage" data-provider="dataMap" finished-at="2022-02-27T12:23:19Z" duration-ms="1913" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=username, Password=validPassword1, Email=validemail@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_VerifyUserAtHomepage -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:interview.TestCases@5dda768f]" started-at="2022-02-27T12:23:19Z" name="afterClass" finished-at="2022-02-27T12:23:19Z" duration-ms="593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- interview.TestCases -->
+    </test> <!-- Verify that the user can create an account successfully -->
+    <test started-at="2022-02-27T12:23:19Z" name="Verify that the user cannot log in when entering a wrong email address or password" finished-at="2022-02-27T12:23:24Z" duration-ms="4728">
+      <class name="interview.TestCases">
+        <test-method is-config="true" signature="beforeClass(org.testng.ITestContext)[pri:0, instance:interview.TestCases@7dc0f706]" started-at="2022-02-27T12:23:19Z" name="beforeClass" finished-at="2022-02-27T12:23:22Z" duration-ms="2555" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@e044b4a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="TC_02_CantLoginWithWrongPass(java.util.Hashtable)[pri:0, instance:interview.TestCases@7dc0f706]" started-at="2022-02-27T12:23:22Z" name="TC_02_CantLoginWithWrongPass" data-provider="dataMap" finished-at="2022-02-27T12:23:24Z" duration-ms="1550" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=invalidMail@gmail.com, Password=invalidPassword1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_CantLoginWithWrongPass -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:interview.TestCases@7dc0f706]" started-at="2022-02-27T12:23:24Z" name="afterClass" finished-at="2022-02-27T12:23:24Z" duration-ms="622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- interview.TestCases -->
+    </test> <!-- Verify that the user cannot log in when entering a wrong email address or password -->
+  </suite> <!-- demoTestSuite -->
+</testng-results>
