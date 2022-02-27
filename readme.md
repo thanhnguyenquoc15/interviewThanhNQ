@@ -9,5 +9,5 @@ To run this project
 2. Install TestNG plugin for Eclipse
 2. Specify JRE 1.8 for the Java project to run on
 4. Import this as an existing Project in Eclipse
-5. Navigate to the test Suite \src\main\suite in Eclipse
+5. Navigate to the test Suite \src\suite in Eclipse
 6. Open demo.xml and Run as TestNG Suite
